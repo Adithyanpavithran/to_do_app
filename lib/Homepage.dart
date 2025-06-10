@@ -24,7 +24,7 @@ class _HomepageState extends State<Homepage> {
           child: AlertDialog(
             title: Text(
               "EditTodo",
-              style: GoogleFonts.timmana(
+              style: GoogleFonts.taiHeritagePro(
                 color: const Color.fromARGB(255, 12, 12, 12),
                 fontWeight: FontWeight.bold,
                 fontSize: 28,
@@ -51,7 +51,7 @@ class _HomepageState extends State<Homepage> {
                   "Update",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    color: const Color.fromARGB(255, 54, 194, 241),
+                    color: Colors.black,
                   ),
                 ),
               ),
@@ -112,7 +112,10 @@ class _HomepageState extends State<Homepage> {
                             hintText: "Enter Task",
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide(color: Colors.black),
+                              borderSide: BorderSide(
+                                color: Colors.black,
+                                width: 1,
+                              ),
                             ),
                           ),
                         ),
@@ -160,7 +163,10 @@ class _HomepageState extends State<Homepage> {
                             itemCount: todos.length,
                             itemBuilder: (context, Index) {
                               return ListTile(
-                                title: Text(todos[Index]["Todo"]),
+                                title: Text(
+                                  todos[Index]["Todo"],
+                                  style: GoogleFonts.timmana(fontSize: 20),
+                                ),
                                 trailing: Row(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
