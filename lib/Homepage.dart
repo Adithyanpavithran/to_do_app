@@ -31,7 +31,6 @@ class Homepage extends StatelessWidget {
                     Expanded(
                       child: TextField(
                         decoration: InputDecoration(
-                          labelText: "Enter Task",
                           hintText: "Enter Task",
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
